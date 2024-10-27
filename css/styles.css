@@ -1,0 +1,76 @@
+/*declaración de variables-definir el manual de marca en CSS*/
+:root{
+    --blue-talento-tech:#002552;
+    --blanco-talento-tech: #ffff;
+    --negro-talento-tech: black;
+
+    --sm:16px;
+    --md:32px;
+    --lg:56px;
+}
+
+body{
+    margin:0;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.login{
+
+    width:100%;
+    height:100vh; /* vh es el maximo que puede tener ese contenedor*/
+    display:grid;
+    place-items: center;
+}
+.form-container{
+    display:grid;
+    margin-bottom: 50px;
+    grid-template-rows: auto 1fr auto;
+    width: 400px;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.logo-tech{
+    width: 150px;
+    margin-bottom: 50px;
+    justify-self: center;
+    background: var(--blue-talento-tech);
+    border-radius: 10px;
+    @media (max-width: 400px){
+        
+    }
+        
+    
+
+}
+.titulo{
+    font-size: var(--lg);
+    margin-bottom: 12px;
+    text-align: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    background: var(--blanco-talento-tech);
+    border: 1;
+    border-radius: 10px;
+    height: 40px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 10px;
+}
+.primary-buton{
+    background: var(--blue-talento-tech);
+    border-radius: 10px;
+    border:none;
+    color: var(--blanco-talento-tech);
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+  
+}
