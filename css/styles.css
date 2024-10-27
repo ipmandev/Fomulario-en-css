@@ -37,12 +37,14 @@ body{
     justify-self: center;
     background: var(--blue-talento-tech);
     border-radius: 10px;
-    @media (max-width: 400px){
-        
-    }
+ 
         
     
 
+}
+
+@media (min-width: 600px){
+    .logo-tech{display:none}
 }
 .titulo{
     font-size: var(--lg);
